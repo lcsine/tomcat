@@ -19,12 +19,13 @@ public class HelloServlet implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("service()被执行了一次");
-        PrintWriter writer = servletResponse.getWriter();
-        writer.print("hello service");
-        writer.flush();
+        System.out.println("service1()被执行了一次");
+//        PrintWriter writer = servletResponse.getWriter();
+//        writer.print("hello service");
+//        writer.flush();
         //请求转发
-        servletRequest.getRequestDispatcher("hello3").forward(servletRequest,servletResponse);
+        servletRequest.getRequestDispatcher("/hello3").forward(servletRequest,servletResponse);
+
     }
 
     @Override
