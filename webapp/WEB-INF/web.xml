@@ -6,6 +6,31 @@
          version="6.0"
          metadata-complete="true">
 
+        <servlet>
+            <servlet-name>hello</servlet-name>
+            <servlet-class>com.ydlclass.HelloServlet</servlet-class>
 
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>hello</servlet-name>
+            <url-pattern>/hello</url-pattern>
+        </servlet-mapping>
+    <servlet>
+        <servlet-name>hello2</servlet-name>
+        <servlet-class>com.ydlclass.HelloServlet2</servlet-class>
 
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello2</servlet-name>
+        <url-pattern>/hello2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>hello3</servlet-name>
+        <servlet-class>com.ydlclass.HelloServlet3</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello3</servlet-name>
+        <url-pattern>/hello3</url-pattern>
+    </servlet-mapping>
 </web-app>

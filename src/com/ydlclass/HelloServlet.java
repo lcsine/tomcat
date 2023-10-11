@@ -23,6 +23,8 @@ public class HelloServlet implements Servlet {
         PrintWriter writer = servletResponse.getWriter();
         writer.print("hello service");
         writer.flush();
+        //请求转发
+        servletRequest.getRequestDispatcher("hello3").forward(servletRequest,servletResponse);
     }
 
     @Override
